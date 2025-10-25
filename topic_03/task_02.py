@@ -1,39 +1,34 @@
-# Програма тестування методів списків 
+my_list = [1, 2, 3]
+print("Початковий список:", my_list)
 
-print("Тестування функцій списків у Python")
+# append
+my_list.append(4)
+print("append(4):", my_list)
 
-# Початковий список
-numbers = [5, 2, 9, 1]
-print("Початковий список: {numbers}")
+# extend
+my_list.extend([5, 6])
+print("extend([5,6]):", my_list)
 
-# append – додає елемент у кінець списку
-numbers.append(7)
-print("Після append(7): {numbers}")
+# insert
+my_list.insert(2, 99)
+print("insert(2,99):", my_list)
 
-# extend – додає кілька елементів одразу (інший список)
-numbers.extend([3, 8])
-print("Після extend([3, 8]): {numbers}")
+# remove
+my_list.remove(2)
+print("remove(2):", my_list)
 
-# insert(index, value) – вставляє елемент у певну позицію
-numbers.insert(2, 10)  # вставляємо 10 на позицію 2
-print("Після insert(2, 10): {numbers}")
+# copy
+list_copy = my_list.copy()
+print("copy():", list_copy)
 
-# remove(value) – видаляє перший елемент із заданим значенням
-numbers.remove(9)
-print("Після remove(9): {numbers}")
+# reverse
+my_list.reverse()
+print("reverse():", my_list)
 
-# sort – сортує список за зростанням
-numbers.sort()
-print("Після sort(): {numbers}")
+# sort
+my_list.sort()
+print("sort():", my_list)
 
-# reverse – перевертає порядок елементів
-numbers.reverse()
-print("Після reverse(): {numbers}")
-
-# copy – створює копію списку
-copy_list = numbers.copy()
-print("Копія списку через copy(): {copy_list}")
-
-# clear – очищує список повністю
-numbers.clear()
-print("Після clear(): {numbers}")
+# clear
+my_list.clear()
+print("clear():", my_list)
